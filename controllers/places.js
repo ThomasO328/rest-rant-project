@@ -15,7 +15,13 @@ router.get('/', (req, res) => {
         pic: 'http://placekitten.com/250/250'
       }]
       
+      
     res.render('places/index', { places })
 })
+
+router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+  
 
 module.exports = router
